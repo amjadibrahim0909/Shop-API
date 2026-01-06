@@ -1,11 +1,17 @@
 package com.amjad.shopapi.bestellung.modell;
 
 import jakarta.persistence.*;
-import java.util.List;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
+import java.util.List;
 
 @Entity
 @Table(name = "orders")
+@Getter
+@Setter
+@NoArgsConstructor
 public class Bestellung {
 
     @Id
@@ -18,39 +24,4 @@ public class Bestellung {
 
     @OneToMany(cascade = CascadeType.ALL)
     private List<Bestellposition> orderItems;
-
-    // Getter und Setter
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Long getUserId() {
-        return userId;
-    }
-
-    public void setUserId(Long userId) {
-        this.userId = userId;
-    }
-
-    public double getTotalPrice() {
-        return totalPrice;
-    }
-
-    public void setTotalPrice(double totalPrice) {
-        this.totalPrice = totalPrice;
-    }
-
-    public List<Bestellposition> getOrderItems() {
-        return orderItems;
-    }
-
-    public void setOrderItems(List<Bestellposition> orderItems) {
-        this.orderItems = orderItems;
-    }
 }
-
