@@ -9,9 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-/**
- * REST-Controller für Bestellungen mit DTO-Unterstützung
- */
+
 @RestController
 @RequestMapping("/orders")
 @RequiredArgsConstructor
