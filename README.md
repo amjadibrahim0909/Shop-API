@@ -82,7 +82,7 @@ mvn spring-boot:run
 curl http://localhost:8080/api/products
 ```
 
-## ⚙️ Konfiguration
+##  Konfiguration
 
 ### Anwendungseigenschaften (`application.properties`)
 
@@ -149,7 +149,7 @@ http://localhost:8080/api
 
 
 
-#### 👤 **Benutzer** (`/users`)
+####  **Benutzer** (`/users`)
 
 | Endpoint | Methode | Beschreibung | Authentifizierung |
 |----------|---------|-------------|-------------------|
